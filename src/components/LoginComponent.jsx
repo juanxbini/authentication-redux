@@ -1,4 +1,3 @@
-import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { useState } from 'react'
 
@@ -14,7 +13,7 @@ const LoginComponent = () => {
     }
 
     const handleLogout = () => {
-        dispatch({ type: 'LOGOUT_REQUEST' })
+        dispatch({ type: 'LOGOUT' })
     }
 
 
