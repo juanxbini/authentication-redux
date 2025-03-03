@@ -20,6 +20,7 @@ La aplicación se conecta a una **API REST** para manejar la autenticación de u
 │           ├── authReducer.js # Reducer para autenticación 
 │ 
 │    ├── store.js # Configuración del Store de Redux 
+│
 ├── /components # Componentes reutilizables de la aplicación 
 │           ├── LoginComponent.jsx # Componente de login y logout
 │ 
