@@ -5,7 +5,7 @@ export const login = (credentials) => async (dispatch) => {
     dispatch({ type: LOGIN_REQUEST }); // Iniciamos la petición
     try{
     // Hacemos la petición a la API
-    const response = await axios.post('http://localhost:3000/api/auth', credentials);
+    const response = await axios.post('http://localhost:3000/api/auth/login', credentials);
     
     // Extraemos los datos de la respuesta
     const { token, user } = response.data;

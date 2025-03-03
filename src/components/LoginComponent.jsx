@@ -1,12 +1,15 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { useState } from 'react'
-import { login } from '../redux/actions/authActions'
+import { login, logout } from '../redux/actions/authActions'
 
 const LoginComponent = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
+
     const dispatch = useDispatch()
     const { user, loading, error, isAuthenticated } = useSelector((state) => state.auth)
+
+
     /*
      * useSelector es un hook de React-Redux 
      * que permite acceder al estado global del store 
@@ -34,7 +37,7 @@ const LoginComponent = () => {
             {error && <p>{error}</p>}
             {isAuthenticated ? (
                 <>
-                    <p>Usuario {user.name} autenticado</p>
+                    <p>Usuario {user.username} autenticado</p>
                     <button onClick={handleLogout}>Cerrar sesión</button>
                 </>
             ) : (
