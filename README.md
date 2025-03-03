@@ -121,10 +121,10 @@ export default authReducer;
 ```
 
 ### 📌 Explicación:
-✔ `LOGIN_REQUEST` → Indica que la autenticación está en proceso.
-✔ `LOGIN_SUCCESS` → Guarda el usuario y el token en el estado global.
-✔ `LOGIN_FAILURE` → Guarda el error si la autenticación falla.
-✔ `LOGOUT` → Reinicia el estado.
+- ✔ `LOGIN_REQUEST` → Indica que la autenticación está en proceso.
+- ✔ `LOGIN_SUCCESS` → Guarda el usuario y el token en el estado global.
+- ✔ `LOGIN_FAILURE` → Guarda el error si la autenticación falla.
+- ✔ `LOGOUT` → Reinicia el estado.
 
 ## 4️⃣ Store (/redux/store.js)
 El **store** centraliza el estado global y combina los reducers.
@@ -162,11 +162,11 @@ createRoot(document.getElementById('root')).render(
 );
 ```
 ### 📌 Explicación:
-✔ `<Provider>` permite que Redux sea accesible en todos los componentes de la app.
+- ✔ `<Provider>` permite que Redux sea accesible en todos los componentes de la app.
 
 ### 6️⃣ Componente de Login (/components/LoginComponent.jsx)
 📄 **`LoginComponent.jsx`**
-
+```
 js
 import { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
@@ -208,13 +208,13 @@ function LoginComponent() {
         </div>
     );
 }
-
 export default LoginComponent;
 ```
+
 ### 📌 Explicación:
-✔ Usa `useSelector()` para leer el estado global (auth).
-✔ Usa `useDispatch()` para enviar acciones de **login** y **logout**.
-✔ Renderiza el formulario o los datos del usuario según el estado global.
+- ✔ Usa `useSelector()` para leer el estado global (auth).
+- ✔ Usa `useDispatch()` para enviar acciones de **login** y **logout**.
+- ✔ Renderiza el formulario o los datos del usuario según el estado global.
 
 ## 🎯 Resumen
 📌 Redux permite manejar el estado de autenticación de forma global y centralizada.
