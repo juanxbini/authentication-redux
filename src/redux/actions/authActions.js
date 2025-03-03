@@ -23,11 +23,12 @@ export const login = (credentials) => async (dispatch) => {
         // Enviamos acción de error con el mensaje de error
         dispatch({
             type: LOGIN_FAILURE,
-            payload: error.response.data.message
+            payload: error.response ? error.response.data.message : error.message
         })
     }
 }
 
 export const logout = () => (dispatch) => {
-    
+    localStorage.removeItem('token'); // Eliminamos el token del localStorage
+    dispatch({ type: LOGOUT }); // Enviamos la acción de logout
 }

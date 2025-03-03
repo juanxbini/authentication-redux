@@ -1,19 +1,29 @@
 import { useSelector, useDispatch } from 'react-redux'
 import { useState } from 'react'
+import { login } from '../redux/actions/authActions'
 
 const LoginComponent = () => {
     const [email, setEmail] = useState('')
     const [password, setPassword] = useState('')
     const dispatch = useDispatch()
     const { user, loading, error, isAuthenticated } = useSelector((state) => state.auth)
+    /*
+     * useSelector es un hook de React-Redux 
+     * que permite acceder al estado global del store 
+     * en cualquier componente funcional.
+     */ 
 
-
+    
+    // Manejador de inicio de sesión
     const handleLogin = () => {
-        dispatch({ type: 'LOGIN_REQUEST', payload: { email, password } })
+        // Llamamos a la acción login con los datos del usuario
+        dispatch(login({ email, password }))
     }
 
+    // Manejador de cierre de sesión
     const handleLogout = () => {
-        dispatch({ type: 'LOGOUT' })
+        // Llamamos a la acción logout
+        dispatch(logout())
     }
 
 
