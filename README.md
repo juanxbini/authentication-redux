@@ -13,13 +13,13 @@ La aplicación se conecta a una **API REST** para manejar la autenticación de u
 ```
 /src 
 ├── /redux # Carpeta donde se maneja Redux 
-│    ├──   /actions # Acciones que modifican el estado global 
+│    ├── /actions # Acciones que modifican el estado global 
 │           ├── authActions.js # Acciones para autenticación 
 │ 
 │    ├── /reducers # Reducers que manejan el estado global 
 │           ├── authReducer.js # Reducer para autenticación 
 │ 
-├── store.js # Configuración del Store de Redux 
+│    ├── store.js # Configuración del Store de Redux 
 ├── /components # Componentes reutilizables de la aplicación 
 │           ├── LoginComponent.jsx # Componente de login y logout
 │ 
