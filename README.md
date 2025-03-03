@@ -217,8 +217,8 @@ export default LoginComponent;
 - ✔ Renderiza el formulario o los datos del usuario según el estado global.
 
 ## 🎯 Resumen
-📌 Redux permite manejar el estado de autenticación de forma global y centralizada.
-📌 Las acciones (authActions.js) disparan eventos que modifican el estado.
-📌 El reducer (authReducer.js) actualiza el estado según las acciones recibidas.
-📌 El store (store.js) almacena el estado global.
-📌 El componente LoginComponent.jsx usa useSelector y useDispatch para interactuar con Redux.
+- 📌 Redux permite manejar el estado de autenticación de forma global y centralizada.
+- 📌 Las acciones (authActions.js) disparan eventos que modifican el estado.
+- 📌 El reducer (authReducer.js) actualiza el estado según las acciones recibidas.
+- 📌 El store (store.js) almacena el estado global.
+- 📌 El componente LoginComponent.jsx usa useSelector y useDispatch para interactuar con Redux.
