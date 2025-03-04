@@ -1,7 +1,7 @@
 
 # Redux Authentication
 
-Este proyecto implementa autenticación de usuario utilizando **React, Redux Toolkit y Redux Thunk**.  
+Este proyecto implementa autenticación de usuario utilizando **React**.  
 La estructura del código sigue un enfoque modular para separar responsabilidades y mejorar la escalabilidad.
 La aplicación se conecta a una **API REST** para manejar la autenticación de usuarios.
 
